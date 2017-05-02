@@ -5,6 +5,7 @@ var items=document.getElementById("nav");
 var anchor1=document.getElementById("anchor1");
 var anchor2=document.getElementById("anchor2");
 var anchor3=document.getElementById("anchor3");
+var logo=document.getElementById("logo");
 window.onscroll=function () {
 "use strict";
 if (document.body.scrollTop >= 200 ) {
@@ -15,6 +16,8 @@ if (document.body.scrollTop >= 200 ) {
        botoncito.classList.add("pink-boton");
        myNav.classList.remove("antique-nav");
        myNav.classList.add("new-nav");
+       logo.removeAttribute('src')
+       logo.setAttribute("src","assets/images/img-lyft/logo-pink.png");
        botoncito.style.display="inline-block";
        anchor1.classList.remove("white-color");
        anchor1.classList.add("pink-color");
@@ -22,7 +25,6 @@ if (document.body.scrollTop >= 200 ) {
        anchor2.classList.add("pink-color");
        anchor3.classList.remove("white-color");
        anchor3.classList.add("pink-color");
-
    }
    else {
        boton1.classList.add("white-boton");
@@ -32,6 +34,8 @@ if (document.body.scrollTop >= 200 ) {
        myNav.classList.add("antique-nav");
        myNav.classList.remove("new-nav");
        botoncito.style.display="none";
+       logo.removeAttribute("src","assets/images/img-lyft/logo-pink.png");
+       logo.setAttribute("src","assets/images/img-lyft/logo-white.png");
        anchor1.classList.remove("pink-color");
        anchor1.classList.add("white-color");
        anchor2.classList.remove("pink-color");
