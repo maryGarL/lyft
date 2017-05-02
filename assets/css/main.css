@@ -246,9 +246,10 @@ margin-top: 20px;
 .new-nav{
   background-color: white;
   position: fixed;
-  width: 100%;
+  width: 107%;
   height: 77px;
-  z-index: -3;
+  left: -84px;
+  z-index: 1;
 }
 .pink-boton {
     background-color: #FF00BF;
